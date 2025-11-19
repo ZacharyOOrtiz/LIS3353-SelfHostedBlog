@@ -1,0 +1,11 @@
+# For Local Development
+:80 {
+    root * /usr/share/caddy
+    file_server
+}
+
+# For Production (Later)
+# your-domain.com {
+#     root * /usr/share/caddy
+#     file_server
+# }

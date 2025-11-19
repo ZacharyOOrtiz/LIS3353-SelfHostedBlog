@@ -1,0 +1,16 @@
+services:
+  blog:
+    # "build: ." tells Docker to look for the Dockerfile in this folder
+    build: .
+    container_name: lis3353-blog
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    # We persist Caddy's data so it remembers SSL certificates later
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
