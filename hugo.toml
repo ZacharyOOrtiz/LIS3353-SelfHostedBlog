@@ -1,4 +1,5 @@
-baseURL = 'http://localhost/'
+#baseURL subject to change after each relaunching of ngrok
+baseURL = 'https://thirstier-alayna-nonidiomatically.ngrok-free.dev'
 languageCode = 'en-us'
 title = 'My Team Blog'
 theme = 'PaperMod'
