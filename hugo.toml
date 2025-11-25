@@ -1,4 +1,36 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://localhost/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'My Team Blog'
 theme = 'PaperMod'
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  
+  [params.profileMode]
+    enabled = true
+    title = "We are Team [Name]"
+    subtitle = "Welcome to our self-hosted engineering blog."
+    imageTitle = "My Team"
+    imageWidth = 120
+    imageHeight = 120
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ZacharyOOrtiz/LIS3353-SelfHostedBlog"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Blog"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
